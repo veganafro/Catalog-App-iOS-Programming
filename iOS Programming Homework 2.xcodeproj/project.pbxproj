@@ -106,7 +106,6 @@
 				CE9C8D961DAAC6B600B4045A /* ViewController.m */,
 				CE9C8D9B1DAAC6B600B4045A /* Assets.xcassets */,
 				CE9C8D9D1DAAC6B600B4045A /* LaunchScreen.storyboard */,
-				CE9C8DA01DAAC6B600B4045A /* Info.plist */,
 				CE9C8D8F1DAAC6B600B4045A /* Supporting Files */,
 			);
 			path = "iOS Programming Homework 2";
@@ -115,6 +114,7 @@
 		CE9C8D8F1DAAC6B600B4045A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE9C8DA01DAAC6B600B4045A /* Info.plist */,
 				CE9C8D901DAAC6B600B4045A /* main.m */,
 				CE9C8D921DAAC6B600B4045A /* AppDelegate.h */,
 				CE9C8D931DAAC6B600B4045A /* AppDelegate.m */,
