@@ -148,6 +148,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-xa-w3L">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="6dx-aj-aK1"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Done">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -168,6 +182,7 @@
                             <constraint firstItem="Gg4-T7-ucf" firstAttribute="centerY" secondItem="2Xx-WK-sW8" secondAttribute="centerY" id="UdI-XN-mc8"/>
                             <constraint firstItem="t31-Ip-PAC" firstAttribute="top" secondItem="AMP-b8-grp" secondAttribute="bottom" constant="15" id="WEh-Zd-Gy1"/>
                             <constraint firstItem="2Xx-WK-sW8" firstAttribute="top" secondItem="U27-hL-emH" secondAttribute="bottom" constant="31" id="bWZ-cu-gxZ"/>
+                            <constraint firstItem="HN4-xa-w3L" firstAttribute="top" secondItem="MKE-kd-Gx9" secondAttribute="bottom" id="cVW-2e-F38"/>
                             <constraint firstItem="U27-hL-emH" firstAttribute="leading" secondItem="2Xx-WK-sW8" secondAttribute="leading" id="co7-qx-v4w"/>
                             <constraint firstItem="t31-Ip-PAC" firstAttribute="trailing" secondItem="AMP-b8-grp" secondAttribute="trailing" id="cx6-tf-PkH"/>
                             <constraint firstItem="d57-16-IUK" firstAttribute="leading" secondItem="t2F-cX-WWX" secondAttribute="leading" id="dNY-cF-QsG"/>
@@ -179,6 +194,7 @@
                             <constraint firstItem="U27-hL-emH" firstAttribute="leading" secondItem="uRX-aL-8Ag" secondAttribute="leading" id="p33-FM-WbI"/>
                             <constraint firstItem="bTm-nu-Fdu" firstAttribute="centerY" secondItem="rxS-bu-dZG" secondAttribute="centerY" id="tye-4E-wBT"/>
                             <constraint firstItem="d57-16-IUK" firstAttribute="top" secondItem="DC7-qJ-4V6" secondAttribute="bottom" constant="84" id="vyJ-O6-Smz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="HN4-xa-w3L" secondAttribute="leading" id="xiy-f8-aWt"/>
                             <constraint firstItem="bTm-nu-Fdu" firstAttribute="top" secondItem="2Xx-WK-sW8" secondAttribute="bottom" constant="31" id="zCo-Sl-Gsj"/>
                             <constraint firstItem="d57-16-IUK" firstAttribute="leading" secondItem="Gg4-T7-ucf" secondAttribute="leading" id="zyY-AW-3r3"/>
                         </constraints>
@@ -186,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHq-w1-y0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="-230"/>
+            <point key="canvasLocation" x="964" y="-230.73463268365819"/>
         </scene>
     </scenes>
 </document>
