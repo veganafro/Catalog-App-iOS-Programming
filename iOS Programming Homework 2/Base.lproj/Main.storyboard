@@ -27,13 +27,13 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLt-sN-aoV">
                                 <state key="normal" title="Add Items"/>
                                 <connections>
-                                    <segue destination="djZ-Tj-mTi" kind="presentation" id="fBN-Ld-79A"/>
+                                    <segue destination="WJ4-O9-fEf" kind="presentation" id="4fP-H8-sF2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivb-hN-Yvm">
                                 <state key="normal" title="View Items"/>
                                 <connections>
-                                    <segue destination="WJ4-O9-fEf" kind="presentation" id="7iA-As-5Cj"/>
+                                    <segue destination="djZ-Tj-mTi" kind="presentation" id="Afb-OA-NpV"/>
                                 </connections>
                             </button>
                         </subviews>
