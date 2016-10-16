@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="964" y="501.49925037481262"/>
         </scene>
-        <!--View Controller-->
+        <!--See Items View Controller-->
         <scene sceneID="x7a-jr-gAW">
             <objects>
-                <viewController id="djZ-Tj-mTi" sceneMemberID="viewController">
+                <viewController id="djZ-Tj-mTi" customClass="SeeItemsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MKE-kd-Gx9"/>
                         <viewControllerLayoutGuide type="bottom" id="vcV-y4-FTm"/>
