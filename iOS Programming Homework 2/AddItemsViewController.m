@@ -34,9 +34,9 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    RootViewController * rootVC = [segue destinationViewController];
+    //RootViewController * rootVC = [segue destinationViewController];
     
-    NSLog(@"...starting segue %@", segue.identifier);
+    NSLog(@"...starting segue %@ in AddItemsViewController", segue.identifier);
     
     if ([segue.identifier isEqualToString:@"addItemsAction"]) {
     

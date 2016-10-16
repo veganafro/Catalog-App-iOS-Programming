@@ -18,10 +18,12 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"addItemsSegue"]) {
-        AddItemsViewController * addItemsVC = segue.destinationViewController;
+        //AddItemsViewController * addItemsVC = segue.destinationViewController;
+        NSLog(@"addItemsSegue in RootViewController");
     }
     else if ([segue.identifier isEqualToString:@"viewItemsSegue"]) {
-        SeeItemsViewController * viewItemsVC = segue.destinationViewController;
+        //SeeItemsViewController * viewItemsVC = segue.destinationViewController;
+        NSLog(@"viewItemsSegue in RootViewController");
     }
     
 }
@@ -36,6 +38,10 @@
 
 - (IBAction)viewItemsAction:(UIStoryboardSegue *) segue {
     NSLog(@"viewItems in RootViewController");
+}
+
+- (IBAction)doneViewItemsAction:(UIStoryboardSegue *) segue {
+    NSLog(@"doneViewItems in RootViewController");
 }
 
 
