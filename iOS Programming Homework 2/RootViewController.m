@@ -27,7 +27,11 @@
 }
 
 - (IBAction)addItemsAction:(UIStoryboardSegue *) segue {
-    NSLog(@"addItem in RootViewController");
+    NSLog(@"addItems in RootViewController");
+}
+
+- (IBAction)cancelAddItemsAction:(UIStoryboardSegue *) segue {
+    NSLog(@"cancelAddItems in RootViewController");
 }
 
 - (IBAction)viewItemsAction:(UIStoryboardSegue *) segue {

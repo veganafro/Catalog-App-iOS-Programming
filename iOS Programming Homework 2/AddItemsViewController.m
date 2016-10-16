@@ -43,5 +43,10 @@
     }
 }
 
+- (IBAction)addButtonPressed:(id)sender {
+}
+
+- (IBAction)cancelButtonPressed:(id)sender {
+}
 
 @end

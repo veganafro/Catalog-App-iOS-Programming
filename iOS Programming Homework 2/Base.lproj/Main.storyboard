@@ -106,12 +106,20 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFp-Bx-4Ob">
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonPressed:" destination="WJ4-O9-fEf" eventType="touchUpInside" id="ISa-xH-vma"/>
+                                    <segue destination="7KI-Fx-TI0" kind="unwind" identifier="cancelAddItemsAction" unwindAction="cancelAddItemsAction:" id="whq-pM-479"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hse-4N-QvK">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="LuD-fs-rOj"/>
                                 </constraints>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="WJ4-O9-fEf" eventType="touchUpInside" id="jhf-ic-ALc"/>
+                                    <segue destination="7KI-Fx-TI0" kind="unwind" identifier="addItemsAction" unwindAction="addItemsAction:" id="6ME-pf-Z9Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -146,6 +154,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhz-Cb-nLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7KI-Fx-TI0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="964" y="501.49925037481262"/>
         </scene>
