@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE47A51D1DB31BE200D21A57 /* AddItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47A51C1DB31BE200D21A57 /* AddItemsViewController.m */; };
 		CE9C8D911DAAC6B600B4045A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C8D901DAAC6B600B4045A /* main.m */; };
 		CE9C8D941DAAC6B600B4045A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C8D931DAAC6B600B4045A /* AppDelegate.m */; };
 		CE9C8D971DAAC6B600B4045A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C8D961DAAC6B600B4045A /* RootViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE47A51B1DB31BE200D21A57 /* AddItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddItemsViewController.h; sourceTree = "<group>"; };
+		CE47A51C1DB31BE200D21A57 /* AddItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddItemsViewController.m; sourceTree = "<group>"; };
 		CE9C8D8C1DAAC6B600B4045A /* iOS Programming Homework 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Programming Homework 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9C8D901DAAC6B600B4045A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9C8D921DAAC6B600B4045A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9C8D981DAAC6B600B4045A /* Main.storyboard */,
+				CE47A51B1DB31BE200D21A57 /* AddItemsViewController.h */,
+				CE47A51C1DB31BE200D21A57 /* AddItemsViewController.m */,
 				CE9C8D951DAAC6B600B4045A /* RootViewController.h */,
 				CE9C8D961DAAC6B600B4045A /* RootViewController.m */,
 				CE9C8D9B1DAAC6B600B4045A /* Assets.xcassets */,
@@ -277,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9C8D971DAAC6B600B4045A /* RootViewController.m in Sources */,
+				CE47A51D1DB31BE200D21A57 /* AddItemsViewController.m in Sources */,
 				CE9C8D941DAAC6B600B4045A /* AppDelegate.m in Sources */,
 				CE9C8D911DAAC6B600B4045A /* main.m in Sources */,
 			);
