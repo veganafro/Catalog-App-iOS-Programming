@@ -64,74 +64,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGZ-UH-bWI">
-                                <frame key="frameInset" minX="13" minY="80" width="61" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGZ-UH-bWI">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Way-Eo-oZG">
-                                <frame key="frameInset" minX="198" minY="75" width="161" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Way-Eo-oZG">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soS-Ni-2f5">
-                                <frame key="frameInset" minX="198" minY="150" width="161" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soS-Ni-2f5">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="029-Uh-Lkf">
-                                <frame key="frameInset" minX="13" minY="155" width="88" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="029-Uh-Lkf">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Cost" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rum-WY-blu">
-                                <frame key="frameInset" minX="198" minY="236" width="161" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Product Cost" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rum-WY-blu">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuQ-jg-UaG">
-                                <frame key="frameInset" minX="13" minY="241" width="36" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuQ-jg-UaG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number on Hand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yu5-g0-SLh">
-                                <frame key="frameInset" minX="16" minY="323" width="130.5" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number on Hand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yu5-g0-SLh">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Products Available" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Li-vv-lhd">
-                                <frame key="frameInset" minX="198" minY="318" width="161" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Products Available" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Li-vv-lhd">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFp-Bx-4Ob">
-                                <frame key="frameInset" minX="13" minY="459" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFp-Bx-4Ob">
                                 <state key="normal" title="Cancel"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hse-4N-QvK">
-                                <frame key="frameInset" minX="313" minY="459" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hse-4N-QvK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="LuD-fs-rOj"/>
+                                </constraints>
                                 <state key="normal" title="Add"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Way-Eo-oZG" firstAttribute="centerY" secondItem="IGZ-UH-bWI" secondAttribute="centerY" id="28f-iw-2Ey"/>
+                            <constraint firstItem="2Li-vv-lhd" firstAttribute="top" secondItem="Rum-WY-blu" secondAttribute="bottom" constant="52" id="6hN-qB-Bih"/>
+                            <constraint firstItem="029-Uh-Lkf" firstAttribute="top" secondItem="IGZ-UH-bWI" secondAttribute="bottom" constant="56" id="8JU-8k-1jU"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="trailing" secondItem="6zI-pM-pee" secondAttribute="trailingMargin" id="B5K-sE-6Fl"/>
+                            <constraint firstItem="AuQ-jg-UaG" firstAttribute="leading" secondItem="6zI-pM-pee" secondAttribute="leadingMargin" constant="-3" id="C6m-ne-mSM"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="trailing" secondItem="soS-Ni-2f5" secondAttribute="trailing" id="CLm-Gq-YQS"/>
+                            <constraint firstItem="AuQ-jg-UaG" firstAttribute="top" secondItem="029-Uh-Lkf" secondAttribute="bottom" constant="65" id="Dfx-KM-rd1"/>
+                            <constraint firstItem="2Li-vv-lhd" firstAttribute="leading" secondItem="Yu5-g0-SLh" secondAttribute="trailing" constant="51.5" id="HAF-2N-eKC"/>
+                            <constraint firstItem="029-Uh-Lkf" firstAttribute="leading" secondItem="6zI-pM-pee" secondAttribute="leadingMargin" constant="-3" id="KWA-GR-Rf4"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Yu5-g0-SLh" secondAttribute="leading" id="LCb-AN-Jrb"/>
+                            <constraint firstItem="029-Uh-Lkf" firstAttribute="leading" secondItem="CFp-Bx-4Ob" secondAttribute="leading" id="MJd-f1-y8P"/>
+                            <constraint firstItem="soS-Ni-2f5" firstAttribute="leading" secondItem="029-Uh-Lkf" secondAttribute="trailing" constant="97" id="Rkx-Ty-E4Y"/>
+                            <constraint firstItem="Yu5-g0-SLh" firstAttribute="centerY" secondItem="2Li-vv-lhd" secondAttribute="centerY" id="UJf-DK-80H"/>
+                            <constraint firstItem="Way-Eo-oZG" firstAttribute="baseline" secondItem="IGZ-UH-bWI" secondAttribute="baseline" id="V19-Ju-Lg8"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="trailing" secondItem="Way-Eo-oZG" secondAttribute="trailing" id="auj-4w-Vnb"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="centerY" secondItem="AuQ-jg-UaG" secondAttribute="centerY" id="eni-tB-UVk"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="trailing" secondItem="hse-4N-QvK" secondAttribute="trailing" id="eou-Iy-9p4"/>
+                            <constraint firstItem="c5O-Ra-5iq" firstAttribute="top" secondItem="hse-4N-QvK" secondAttribute="bottom" constant="178" id="fqd-6U-eo3"/>
+                            <constraint firstItem="029-Uh-Lkf" firstAttribute="centerY" secondItem="soS-Ni-2f5" secondAttribute="centerY" id="knW-2Z-ly7"/>
+                            <constraint firstItem="029-Uh-Lkf" firstAttribute="top" secondItem="6zI-pM-pee" secondAttribute="top" constant="155" id="nQy-kw-Oms"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="leading" secondItem="AuQ-jg-UaG" secondAttribute="trailing" constant="149" id="nsz-I3-wAu"/>
+                            <constraint firstItem="hse-4N-QvK" firstAttribute="baseline" secondItem="CFp-Bx-4Ob" secondAttribute="baseline" id="p1W-3W-dT5"/>
+                            <constraint firstItem="Way-Eo-oZG" firstAttribute="leading" secondItem="IGZ-UH-bWI" secondAttribute="trailing" constant="124" id="peJ-0x-vpL"/>
+                            <constraint firstItem="IGZ-UH-bWI" firstAttribute="leading" secondItem="6zI-pM-pee" secondAttribute="leadingMargin" constant="-3" id="sAB-as-ZMk"/>
+                            <constraint firstItem="Rum-WY-blu" firstAttribute="trailing" secondItem="2Li-vv-lhd" secondAttribute="trailing" id="t5s-6u-dtc"/>
+                            <constraint firstItem="soS-Ni-2f5" firstAttribute="top" secondItem="Way-Eo-oZG" secondAttribute="bottom" constant="45" id="uYr-vN-17D"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhz-Cb-nLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
