@@ -7,6 +7,8 @@
 //
 
 #import "RootViewController.h"
+#import "AddItemsViewController.h"
+#import "SeeItemsViewController.h"
 
 @interface RootViewController ()
 
@@ -15,7 +17,21 @@
 @implementation RootViewController
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"addItemsSegue"]) {
+        AddItemsViewController * addItemsVC = segue.destinationViewController;
+    }
+    else if ([segue.identifier isEqualToString:@"viewItemsSegue"]) {
+        SeeItemsViewController * viewItemsVC = segue.destinationViewController;
+    }
+    
+}
 
+- (IBAction)addItemsAction:(UIStoryboardSegue *) segue {
+    NSLog(@"addItem in RootViewController");
+}
+
+- (IBAction)viewItemsAction:(UIStoryboardSegue *) segue {
+    NSLog(@"viewItems in RootViewController");
 }
 
 
