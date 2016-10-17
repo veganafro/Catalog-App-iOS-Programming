@@ -8,6 +8,7 @@
 
 #import "AddItemsViewController.h"
 #import "RootViewController.h"
+#import "ObjectInfo.h"
 
 @interface AddItemsViewController ()
 

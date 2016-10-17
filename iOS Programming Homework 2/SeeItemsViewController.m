@@ -8,6 +8,7 @@
 
 #import "SeeItemsViewController.h"
 #import "RootViewController.h"
+#import "ObjectInfo.h"
 
 @interface SeeItemsViewController ()
 
