@@ -33,6 +33,8 @@
     self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
 }
 
+//- (void) vi
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -61,6 +63,8 @@
 - (IBAction)backwardButtonPressed:(id)sender {
     if (self.arrayPosition > 0 && self.arrayPosition < self.model.objectArray.count) {
         self.arrayPosition--;
+        
+        self.forwardButton.enabled = YES;
         
         self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
         self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
