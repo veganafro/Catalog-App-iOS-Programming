@@ -21,14 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.arrayPosition = 0;
+    
     NSLog(@"array index is at position %d", self.arrayPosition);
     
-    if (self.arrayPosition == 0) {
-        self.backwardButton.enabled = NO;
-    }
-    else if (self.arrayPosition == self.model.objectArray.count - 1) {
-        self.forwardButton.enabled = NO;
-    }
+    self.backwardButton.enabled = NO;
     
     self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
     self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
@@ -53,9 +50,6 @@
     RootViewController * rootVC = segue.destinationViewController;
     
     NSLog(@"...starting segue %@ in SeeItemsViewController", segue.identifier);
-    
-    if ([segue.identifier isEqualToString:@"doneViewItemsAction"]) {
-    }
     
     rootVC.model = self.model;
     
@@ -87,6 +81,8 @@
 - (IBAction)forwardButtonPressed:(id)sender {
     if (self.arrayPosition >= 0 && self.arrayPosition < self.model.objectArray.count - 1) {
         self.arrayPosition++;
+        
+        self.backwardButton.enabled = YES;
         
         self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
         self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];

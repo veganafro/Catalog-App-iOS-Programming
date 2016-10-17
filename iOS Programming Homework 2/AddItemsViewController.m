@@ -40,9 +40,8 @@
     
     NSLog(@"...starting segue %@ in AddItemsViewController", segue.identifier);
     
-    if ([segue.identifier isEqualToString:@"addItemsAction"]) {
-        rootVC.model = self.model;
-    }
+    rootVC.model = self.model;
+    
 }
 
 - (IBAction)addButtonPressed:(id)sender {

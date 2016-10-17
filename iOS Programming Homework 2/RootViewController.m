@@ -30,7 +30,6 @@
         SeeItemsViewController * viewItemsVC = segue.destinationViewController;
         
         viewItemsVC.model = self.model;
-        viewItemsVC.arrayPosition = 0;
         
         NSLog(@"viewItemsSegue in RootViewController");
     }
@@ -59,6 +58,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.model = [[Model alloc] init];
+    self.model.objectArray = [[NSMutableArray alloc] init];
 }
 
 
