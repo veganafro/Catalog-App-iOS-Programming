@@ -33,7 +33,7 @@
     self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
 }
 
-//- (void) vi
+//- (void) viewWillAppear:(BOOL)animated {}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -62,7 +62,7 @@
 
 - (IBAction)backwardButtonPressed:(id)sender {
     if (self.arrayPosition > 0 && self.arrayPosition < self.model.objectArray.count) {
-        self.arrayPosition--;
+        self.arrayPosition -= 1;
         
         self.forwardButton.enabled = YES;
         
@@ -70,21 +70,17 @@
         self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
         self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
         self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
-    }
-    else if (self.arrayPosition == 0) {
-        self.backwardButton.enabled = NO;
         
-        self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
-        self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
-        self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
-        self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+        if (self.arrayPosition == 0) {
+            self.backwardButton.enabled = NO;
+        }
     }
     
 }
 
 - (IBAction)forwardButtonPressed:(id)sender {
     if (self.arrayPosition >= 0 && self.arrayPosition < self.model.objectArray.count - 1) {
-        self.arrayPosition++;
+        self.arrayPosition += 1;
         
         self.backwardButton.enabled = YES;
         
@@ -92,14 +88,10 @@
         self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
         self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
         self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
-    }
-    else if (self.arrayPosition == self.model.objectArray.count - 1) {
-        self.forwardButton.enabled = NO;
         
-        self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
-        self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
-        self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
-        self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+        if (self.arrayPosition == self.model.objectArray.count - 1) {
+            self.forwardButton.enabled = NO;
+        }
     }
 
 }
