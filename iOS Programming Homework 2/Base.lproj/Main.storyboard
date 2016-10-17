@@ -152,6 +152,12 @@
                             <constraint firstItem="soS-Ni-2f5" firstAttribute="top" secondItem="Way-Eo-oZG" secondAttribute="bottom" constant="45" id="uYr-vN-17D"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productCost" destination="Rum-WY-blu" id="txD-Xy-CxO"/>
+                        <outlet property="productCount" destination="2Li-vv-lhd" id="3Hj-VL-Q70"/>
+                        <outlet property="productDetails" destination="soS-Ni-2f5" id="283-u7-mdi"/>
+                        <outlet property="productName" destination="Way-Eo-oZG" id="p61-xh-wnB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhz-Cb-nLt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7KI-Fx-TI0" userLabel="Exit" sceneMemberID="exit"/>

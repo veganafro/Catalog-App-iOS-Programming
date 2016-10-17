@@ -22,7 +22,13 @@
     // Do any additional setup after loading the view.
     
     NSLog(@"array index is at position %d", self.arrayPosition);
-    self.backwardButton.enabled = NO;
+    
+    if (self.arrayPosition == 0) {
+        self.backwardButton.enabled = NO;
+    }
+    else if (self.arrayPosition == self.model.objectArray.count - 1) {
+        self.forwardButton.enabled = NO;
+    }
     
     self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
     self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];

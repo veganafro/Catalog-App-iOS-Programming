@@ -20,12 +20,16 @@
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"addItemsSegue"]) {
-        //AddItemsViewController * addItemsVC = segue.destinationViewController;
+        AddItemsViewController * addItemsVC = segue.destinationViewController;
+        
+        addItemsVC.model = self.model;
+        
         NSLog(@"addItemsSegue in RootViewController");
     }
     else if ([segue.identifier isEqualToString:@"viewItemsSegue"]) {
         SeeItemsViewController * viewItemsVC = segue.destinationViewController;
         
+        viewItemsVC.model = self.model;
         viewItemsVC.arrayPosition = 0;
         
         NSLog(@"viewItemsSegue in RootViewController");
@@ -53,6 +57,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.model = [[Model alloc] init];
 }
 
 

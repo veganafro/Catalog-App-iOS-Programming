@@ -13,4 +13,9 @@
 
 @property (strong, nonatomic) Model * model;
 
+@property (weak, nonatomic) IBOutlet UITextField *productName;
+@property (weak, nonatomic) IBOutlet UITextField *productDetails;
+@property (weak, nonatomic) IBOutlet UITextField *productCost;
+@property (weak, nonatomic) IBOutlet UITextField *productCount;
+
 @end
