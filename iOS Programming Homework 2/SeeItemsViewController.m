@@ -20,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSLog(@"array index is at position %d", self.arrayPosition);
+    self.backwardButton.enabled = NO;
+    
+    self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
+    self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
+    self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
+    self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,13 +44,14 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    //RootViewController * rootVC = segue.destinationViewController;
+    RootViewController * rootVC = segue.destinationViewController;
     
     NSLog(@"...starting segue %@ in SeeItemsViewController", segue.identifier);
     
     if ([segue.identifier isEqualToString:@"doneViewItemsAction"]) {
-    
     }
+    
+    rootVC.model = self.model;
     
 }
 
@@ -68,7 +77,25 @@
     }
     
 }
+
 - (IBAction)forwardButtonPressed:(id)sender {
+    if (self.arrayPosition >= 0 && self.arrayPosition < self.model.objectArray.count - 1) {
+        self.arrayPosition++;
+        
+        self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
+        self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
+        self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
+        self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    }
+    else if (self.arrayPosition == self.model.objectArray.count - 1) {
+        self.forwardButton.enabled = NO;
+        
+        self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
+        self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
+        self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
+        self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    }
+
 }
 
 @end

@@ -26,12 +26,8 @@
     else if ([segue.identifier isEqualToString:@"viewItemsSegue"]) {
         SeeItemsViewController * viewItemsVC = segue.destinationViewController;
         
-        if (viewItemsVC.arrayPosition == 0) {
-            viewItemsVC.backwardButton.enabled = NO;
-        }
-        else if (viewItemsVC.arrayPosition == viewItemsVC.model.objectArray.count - 1) {
-            viewItemsVC.forwardButton.enabled = NO;
-        }
+        viewItemsVC.arrayPosition = 0;
+        
         NSLog(@"viewItemsSegue in RootViewController");
     }
     
