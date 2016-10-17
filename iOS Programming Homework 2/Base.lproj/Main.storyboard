@@ -222,9 +222,15 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMP-b8-grp">
                                 <state key="normal" title="Increment"/>
+                                <connections>
+                                    <action selector="incrementButtonPressed:" destination="djZ-Tj-mTi" eventType="touchUpInside" id="YrS-cb-2hT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN7-AO-F7j">
                                 <state key="normal" title="Decrement"/>
+                                <connections>
+                                    <action selector="decrementButtonPressed:" destination="djZ-Tj-mTi" eventType="touchUpInside" id="7zf-g0-QXt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t31-Ip-PAC">
                                 <constraints>
@@ -307,7 +313,9 @@
                     </view>
                     <connections>
                         <outlet property="backwardButton" destination="d57-16-IUK" id="bZ4-XU-Kuq"/>
+                        <outlet property="decrementButton" destination="IN7-AO-F7j" id="lNX-ir-i17"/>
                         <outlet property="forwardButton" destination="t31-Ip-PAC" id="7JG-6Q-F0c"/>
+                        <outlet property="incrementButton" destination="AMP-b8-grp" id="LE7-wQ-rcq"/>
                         <outlet property="productCost" destination="bTm-nu-Fdu" id="bSV-qh-LkU"/>
                         <outlet property="productCount" destination="uRX-aL-8Ag" id="KP2-mO-mFo"/>
                         <outlet property="productDetails" destination="2Xx-WK-sW8" id="gta-hN-arG"/>

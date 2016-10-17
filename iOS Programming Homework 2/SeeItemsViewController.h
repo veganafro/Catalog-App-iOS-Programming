@@ -19,6 +19,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *productCost;
 @property (weak, nonatomic) IBOutlet UITextField *productCount;
 
+@property (weak, nonatomic) IBOutlet UIButton *decrementButton;
+@property (weak, nonatomic) IBOutlet UIButton *incrementButton;
+
 @property (weak, nonatomic) IBOutlet UIButton *backwardButton;
 @property (weak, nonatomic) IBOutlet UIButton *forwardButton;
 

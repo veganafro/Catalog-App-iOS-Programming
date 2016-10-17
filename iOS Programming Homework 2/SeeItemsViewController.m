@@ -100,4 +100,20 @@
 
 }
 
+- (IBAction)decrementButtonPressed:(id)sender {
+    if ([self.productCount.text intValue] > 0) {
+        [[self.model.objectArray objectAtIndex:self.arrayPosition] sellItem];
+        
+        self.productCount.text = [NSString stringWithFormat:@"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    }
+    
+}
+- (IBAction)incrementButtonPressed:(id)sender {
+    [[self.model.objectArray objectAtIndex:self.arrayPosition] addStock:1];
+    
+    self.productCount.text = [NSString stringWithFormat:@"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    
+}
+
+
 @end
