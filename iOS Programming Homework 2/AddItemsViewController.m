@@ -13,8 +13,6 @@
 
 @interface AddItemsViewController ()
 
-@property (strong, nonatomic) Model * model;
-
 @end
 
 @implementation AddItemsViewController

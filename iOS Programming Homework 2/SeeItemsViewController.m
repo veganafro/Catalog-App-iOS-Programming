@@ -13,13 +13,6 @@
 
 @interface SeeItemsViewController ()
 
-@property (strong, nonatomic) Model * model;
-
-@property (weak, nonatomic) IBOutlet UITextField *productName;
-@property (weak, nonatomic) IBOutlet UITextField *productDescription;
-@property (weak, nonatomic) IBOutlet UITextField *productCost;
-@property (weak, nonatomic) IBOutlet UITextField *productCount;
-
 @end
 
 @implementation SeeItemsViewController
@@ -52,8 +45,30 @@
     }
     
 }
+
 - (IBAction)doneButtonPressed:(id)sender {
 }
 
+- (IBAction)backwardButtonPressed:(id)sender {
+    if (self.arrayPosition > 0 && self.arrayPosition < self.model.objectArray.count) {
+        self.arrayPosition--;
+        
+        self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
+        self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
+        self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
+        self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    }
+    else if (self.arrayPosition == 0) {
+        self.backwardButton.enabled = NO;
+        
+        self.productName.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getName];
+        self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
+        self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
+        self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    }
+    
+}
+- (IBAction)forwardButtonPressed:(id)sender {
+}
 
 @end

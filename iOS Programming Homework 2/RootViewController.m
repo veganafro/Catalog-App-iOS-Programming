@@ -14,8 +14,6 @@
 
 @interface RootViewController ()
 
-@property (strong, nonatomic) Model * model;
-
 @end
 
 @implementation RootViewController
@@ -26,7 +24,14 @@
         NSLog(@"addItemsSegue in RootViewController");
     }
     else if ([segue.identifier isEqualToString:@"viewItemsSegue"]) {
-        //SeeItemsViewController * viewItemsVC = segue.destinationViewController;
+        SeeItemsViewController * viewItemsVC = segue.destinationViewController;
+        
+        if (viewItemsVC.arrayPosition == 0) {
+            viewItemsVC.backwardButton.enabled = NO;
+        }
+        else if (viewItemsVC.arrayPosition == viewItemsVC.model.objectArray.count - 1) {
+            viewItemsVC.forwardButton.enabled = NO;
+        }
         NSLog(@"viewItemsSegue in RootViewController");
     }
     

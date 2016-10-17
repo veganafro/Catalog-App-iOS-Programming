@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Model;
 
 @interface RootViewController : UIViewController
 
+@property (strong, nonatomic) Model * model;
 
 @end
 

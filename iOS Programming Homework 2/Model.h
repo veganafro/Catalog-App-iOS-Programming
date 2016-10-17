@@ -10,6 +10,6 @@
 
 @interface Model : NSObject
 
-@property (strong, nonatomic) NSArray * objectArray;
+@property (strong, nonatomic) NSMutableArray * objectArray;
 
 @end

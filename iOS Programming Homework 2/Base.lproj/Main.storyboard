@@ -225,12 +225,18 @@
                                     <constraint firstAttribute="width" constant="60" id="1DX-5a-2DX"/>
                                 </constraints>
                                 <state key="normal" title="Forward"/>
+                                <connections>
+                                    <action selector="forwardButtonPressed:" destination="djZ-Tj-mTi" eventType="touchUpInside" id="Qdv-fJ-U61"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d57-16-IUK">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="7gX-wB-aXJ"/>
                                 </constraints>
                                 <state key="normal" title="Backward"/>
+                                <connections>
+                                    <action selector="backwardButtonPressed:" destination="djZ-Tj-mTi" eventType="touchUpInside" id="LiL-My-UFr"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number on Hand" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DC7-qJ-4V6">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -294,10 +300,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="productCost" destination="bTm-nu-Fdu" id="mxj-jh-KDN"/>
-                        <outlet property="productCount" destination="uRX-aL-8Ag" id="sOt-c4-cyC"/>
-                        <outlet property="productDescription" destination="2Xx-WK-sW8" id="weV-DD-hyB"/>
-                        <outlet property="productName" destination="U27-hL-emH" id="SIt-R3-se2"/>
+                        <outlet property="backwardButton" destination="d57-16-IUK" id="bZ4-XU-Kuq"/>
+                        <outlet property="forwardButton" destination="t31-Ip-PAC" id="7JG-6Q-F0c"/>
+                        <outlet property="productCost" destination="bTm-nu-Fdu" id="bSV-qh-LkU"/>
+                        <outlet property="productCount" destination="uRX-aL-8Ag" id="KP2-mO-mFo"/>
+                        <outlet property="productDetails" destination="2Xx-WK-sW8" id="gta-hN-arG"/>
+                        <outlet property="productName" destination="U27-hL-emH" id="2FQ-u1-pqV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHq-w1-y0a" userLabel="First Responder" sceneMemberID="firstResponder"/>

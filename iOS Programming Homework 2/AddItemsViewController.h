@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Model;
 
 @interface AddItemsViewController : UIViewController
+
+@property (strong, nonatomic) Model * model;
 
 @end
