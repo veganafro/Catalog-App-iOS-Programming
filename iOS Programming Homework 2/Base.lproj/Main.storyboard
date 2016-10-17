@@ -293,6 +293,12 @@
                             <constraint firstItem="d57-16-IUK" firstAttribute="leading" secondItem="Gg4-T7-ucf" secondAttribute="leading" id="zyY-AW-3r3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productCost" destination="bTm-nu-Fdu" id="mxj-jh-KDN"/>
+                        <outlet property="productCount" destination="uRX-aL-8Ag" id="sOt-c4-cyC"/>
+                        <outlet property="productDescription" destination="2Xx-WK-sW8" id="weV-DD-hyB"/>
+                        <outlet property="productName" destination="U27-hL-emH" id="SIt-R3-se2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHq-w1-y0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="y6x-Gv-Cys" userLabel="Exit" sceneMemberID="exit"/>

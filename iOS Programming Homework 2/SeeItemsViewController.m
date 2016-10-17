@@ -9,8 +9,16 @@
 #import "SeeItemsViewController.h"
 #import "RootViewController.h"
 #import "ObjectInfo.h"
+#import "Model.h"
 
 @interface SeeItemsViewController ()
+
+@property (strong, nonatomic) Model * model;
+
+@property (weak, nonatomic) IBOutlet UITextField *productName;
+@property (weak, nonatomic) IBOutlet UITextField *productDescription;
+@property (weak, nonatomic) IBOutlet UITextField *productCost;
+@property (weak, nonatomic) IBOutlet UITextField *productCount;
 
 @end
 

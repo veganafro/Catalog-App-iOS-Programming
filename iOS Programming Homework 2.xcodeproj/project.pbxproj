@@ -18,6 +18,7 @@
 		CE9C8DB51DAAC6B600B4045A /* iOS_Programming_Homework_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9C8DB41DAAC6B600B4045A /* iOS_Programming_Homework_2UITests.m */; };
 		CEDBEFC81DB3A7DE00FFF91D /* SeeItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBEFC71DB3A7DE00FFF91D /* SeeItemsViewController.m */; };
 		CEFF0B7C1DB46149000EE15D /* ObjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF0B7B1DB46149000EE15D /* ObjectInfo.m */; };
+		CEFF0B7F1DB46CEC000EE15D /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF0B7E1DB46CEC000EE15D /* Model.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		CEDBEFC71DB3A7DE00FFF91D /* SeeItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeItemsViewController.m; sourceTree = "<group>"; };
 		CEFF0B7A1DB46149000EE15D /* ObjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectInfo.h; sourceTree = "<group>"; };
 		CEFF0B7B1DB46149000EE15D /* ObjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectInfo.m; sourceTree = "<group>"; };
+		CEFF0B7D1DB46CEC000EE15D /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		CEFF0B7E1DB46CEC000EE15D /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				CE9C8D981DAAC6B600B4045A /* Main.storyboard */,
+				CEFF0B7D1DB46CEC000EE15D /* Model.h */,
+				CEFF0B7E1DB46CEC000EE15D /* Model.m */,
 				CEFF0B7A1DB46149000EE15D /* ObjectInfo.h */,
 				CEFF0B7B1DB46149000EE15D /* ObjectInfo.m */,
 				CEDBEFC61DB3A7DE00FFF91D /* SeeItemsViewController.h */,
@@ -295,6 +300,7 @@
 				CE47A51D1DB31BE200D21A57 /* AddItemsViewController.m in Sources */,
 				CE9C8D941DAAC6B600B4045A /* AppDelegate.m in Sources */,
 				CEDBEFC81DB3A7DE00FFF91D /* SeeItemsViewController.m in Sources */,
+				CEFF0B7F1DB46CEC000EE15D /* Model.m in Sources */,
 				CEFF0B7C1DB46149000EE15D /* ObjectInfo.m in Sources */,
 				CE9C8D911DAAC6B600B4045A /* main.m in Sources */,
 			);

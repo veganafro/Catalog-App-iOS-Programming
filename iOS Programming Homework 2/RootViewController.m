@@ -10,8 +10,11 @@
 #import "AddItemsViewController.h"
 #import "SeeItemsViewController.h"
 #import "ObjectInfo.h"
+#import "Model.h"
 
 @interface RootViewController ()
+
+@property (strong, nonatomic) Model * model;
 
 @end
 
