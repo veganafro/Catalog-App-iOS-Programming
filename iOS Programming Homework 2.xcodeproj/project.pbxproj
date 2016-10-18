@@ -19,6 +19,7 @@
 		CEDBEFC81DB3A7DE00FFF91D /* SeeItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDBEFC71DB3A7DE00FFF91D /* SeeItemsViewController.m */; };
 		CEFBB9B51DB5C500001488F3 /* Apple Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBB9B41DB5C500001488F3 /* Apple Logo.png */; };
 		CEFBB9B71DB5C50F001488F3 /* iPhone Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBB9B61DB5C50F001488F3 /* iPhone Logo.png */; };
+		CEFBB9BB1DB5CC60001488F3 /* Simulator Screen Shot Oct 17, 2016, 11.10.45 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = CEFBB9BA1DB5CC60001488F3 /* Simulator Screen Shot Oct 17, 2016, 11.10.45 PM.png */; };
 		CEFF0B7C1DB46149000EE15D /* ObjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF0B7B1DB46149000EE15D /* ObjectInfo.m */; };
 		CEFF0B7F1DB46CEC000EE15D /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF0B7E1DB46CEC000EE15D /* Model.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		CEDBEFC71DB3A7DE00FFF91D /* SeeItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeItemsViewController.m; sourceTree = "<group>"; };
 		CEFBB9B41DB5C500001488F3 /* Apple Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple Logo.png"; sourceTree = "<group>"; };
 		CEFBB9B61DB5C50F001488F3 /* iPhone Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone Logo.png"; sourceTree = "<group>"; };
+		CEFBB9BA1DB5CC60001488F3 /* Simulator Screen Shot Oct 17, 2016, 11.10.45 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot Oct 17, 2016, 11.10.45 PM.png"; sourceTree = "<group>"; };
 		CEFF0B7A1DB46149000EE15D /* ObjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectInfo.h; sourceTree = "<group>"; };
 		CEFF0B7B1DB46149000EE15D /* ObjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectInfo.m; sourceTree = "<group>"; };
 		CEFF0B7D1DB46CEC000EE15D /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			children = (
 				CEFBB9B41DB5C500001488F3 /* Apple Logo.png */,
 				CEFBB9B61DB5C50F001488F3 /* iPhone Logo.png */,
+				CEFBB9BA1DB5CC60001488F3 /* Simulator Screen Shot Oct 17, 2016, 11.10.45 PM.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			files = (
 				CEFBB9B51DB5C500001488F3 /* Apple Logo.png in Resources */,
 				CE9C8D9F1DAAC6B600B4045A /* LaunchScreen.storyboard in Resources */,
+				CEFBB9BB1DB5CC60001488F3 /* Simulator Screen Shot Oct 17, 2016, 11.10.45 PM.png in Resources */,
 				CE9C8D9C1DAAC6B600B4045A /* Assets.xcassets in Resources */,
 				CEFBB9B71DB5C50F001488F3 /* iPhone Logo.png in Resources */,
 				CE9C8D9A1DAAC6B600B4045A /* Main.storyboard in Resources */,
