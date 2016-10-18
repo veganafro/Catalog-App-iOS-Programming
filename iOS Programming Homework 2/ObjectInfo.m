@@ -7,6 +7,7 @@
 //
 
 #import "ObjectInfo.h"
+@import UIKit;
 
 @implementation ObjectInfo
 
@@ -57,6 +58,11 @@
     }
     
     return self;
+}
+
+- (BOOL) setImage:(UIImage *) localImage {
+    image = localImage;
+    return YES;
 }
 
 @end

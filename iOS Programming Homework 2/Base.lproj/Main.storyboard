@@ -316,6 +316,7 @@
                         <outlet property="backwardButton" destination="d57-16-IUK" id="bZ4-XU-Kuq"/>
                         <outlet property="decrementButton" destination="IN7-AO-F7j" id="lNX-ir-i17"/>
                         <outlet property="forwardButton" destination="t31-Ip-PAC" id="7JG-6Q-F0c"/>
+                        <outlet property="imageView" destination="8YP-TT-mED" id="NgZ-Fb-TMD"/>
                         <outlet property="incrementButton" destination="AMP-b8-grp" id="LE7-wQ-rcq"/>
                         <outlet property="productCost" destination="bTm-nu-Fdu" id="bSV-qh-LkU"/>
                         <outlet property="productCount" destination="uRX-aL-8Ag" id="KP2-mO-mFo"/>

@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface ObjectInfo : NSObject
 {
+    UIImage * image;
+    
     NSString * itemName;
     NSString * itemDetails;
     int cost;
@@ -25,5 +28,6 @@
 - (void) sellItem;
 - (void) printObject;
 - (id) initWithParams:(NSString *) name andDetails:(NSString *) details andCost:(int) itemCost andCount:(int) count;
+- (BOOL) setImage:(UIImage *) localImage;
 
 @end

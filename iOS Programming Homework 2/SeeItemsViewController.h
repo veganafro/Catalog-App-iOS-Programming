@@ -14,6 +14,8 @@
 @property (strong, nonatomic) Model * model;
 @property int arrayPosition;
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
 @property (weak, nonatomic) IBOutlet UITextField *productName;
 @property (weak, nonatomic) IBOutlet UITextField *productDetails;
 @property (weak, nonatomic) IBOutlet UITextField *productCost;

@@ -59,6 +59,16 @@
     
     self.model = [[Model alloc] init];
     self.model.objectArray = [[NSMutableArray alloc] init];
+    
+    ObjectInfo * iPhone = [[ObjectInfo alloc] initWithParams:@"iPhone 7" andDetails:@"A phone from Apple" andCost:666 andCount:1];
+    [iPhone setImage:[UIImage imageNamed:@"iPhone Logo"]];
+    
+    [self.model.objectArray addObject:iPhone];
+    
+    ObjectInfo * apple = [[ObjectInfo alloc] initWithParams:@"Apple" andDetails:@"An Apple that sells phones" andCost:999 andCount:1];
+    [apple setImage:[UIImage imageNamed:@"Apple Logo"]];
+    
+    [self.model.objectArray addObject:apple];
 }
 
 
