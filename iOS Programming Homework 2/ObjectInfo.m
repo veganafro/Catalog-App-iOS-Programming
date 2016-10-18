@@ -31,6 +31,10 @@
     
 } // end sellItem
 
+- (UIImage *) getImage {
+    return image;
+}
+
 - (NSString *) getName {
     return itemName;
 }

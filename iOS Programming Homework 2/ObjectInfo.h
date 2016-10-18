@@ -12,7 +12,6 @@
 @interface ObjectInfo : NSObject
 {
     UIImage * image;
-    
     NSString * itemName;
     NSString * itemDetails;
     int cost;
@@ -20,6 +19,7 @@
 }
 
 // instance methods
+- (UIImage *) getImage;
 - (NSString *) getName;
 - (NSString *) getDetails;
 - (int) getCost;

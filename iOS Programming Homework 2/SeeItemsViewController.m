@@ -20,7 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+}
+
+- (void) viewWillAppear:(BOOL)animated {
     self.arrayPosition = 0;
     
     NSLog(@"array index is at position %d", self.arrayPosition);
@@ -31,9 +33,8 @@
     self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
     self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
     self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+    self.imageView.image = [[self.model.objectArray objectAtIndex:self.arrayPosition] getImage];
 }
-
-//- (void) viewWillAppear:(BOOL)animated {}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -70,6 +71,7 @@
         self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
         self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
         self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+        self.imageView.image = [[self.model.objectArray objectAtIndex:self.arrayPosition] getImage];
         
         if (self.arrayPosition == 0) {
             self.backwardButton.enabled = NO;
@@ -88,6 +90,7 @@
         self.productDetails.text = [[self.model.objectArray objectAtIndex:self.arrayPosition] getDetails];
         self.productCost.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getCost]];
         self.productCount.text = [NSString stringWithFormat: @"%d", [[self.model.objectArray objectAtIndex:self.arrayPosition] getNumOnHand]];
+        self.imageView.image = [[self.model.objectArray objectAtIndex:self.arrayPosition] getImage];
         
         if (self.arrayPosition == self.model.objectArray.count - 1) {
             self.forwardButton.enabled = NO;
